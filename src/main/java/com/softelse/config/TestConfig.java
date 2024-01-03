@@ -39,14 +39,8 @@ public class TestConfig implements CommandLineRunner{
 		u2.setDepartment(d1);
 		u3.setDepartment(d2);
 		u4.setDepartment(d2);
-		
-		d1.getDepartments().add(u1);
-		d1.getDepartments().add(u2);
-		d2.getDepartments().add(u3);
-		d2.getDepartments().add(u4);
-		
+	
 		userRepository.saveAll(Arrays.asList(u1, u2, u3, u4));
-		departmentRepository.saveAll(Arrays.asList(d1, d2));
 		
 	}
 
